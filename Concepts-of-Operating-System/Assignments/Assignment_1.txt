@@ -1,0 +1,34 @@
+Problem 1
+a)a.To make a directory we use mkdir command and to to enter into created directory we use cd command.
+
+b)a.To create a file we use touch command. Newly created file is always empty so no data is display we need to fll the data.
+
+c)a.To make a directory we use mkdir command.
+
+d)a.the file can be easily copied and renamed.
+
+e)a. chmod command is used to manipulate permissions over file.
+
+f)a. ls command is used to list all files in directory.
+
+g)a."find . -type f -name "*.txt" " command is used to find all files of txt extension.
+
+h)a.use "date" command to display current date and time.
+
+I)a. to display IP address use "curl config.me"
+
+j) tar command is used to do the zip and unzip the file.
+
+
+Problem 2
+a) head <filename> command is used to see top lines.
+b)tail <filename> command is used to see last lines of the file.
+c) head command with an option is used.
+d)tail command with option can be used.
+e)" tr '[:lower:]' '[:upper:]' < input.txt " command is used to upper
+  lower case letters of a file.
+f)"sort <filename.txt> | uniq" command is used to remove duplicates.
+g)"sort filename.txt | uniq -c" command is used to show number of duplicates .
+
+
+
