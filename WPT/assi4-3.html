@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inspect and check the console</h1>
+
+    <script>
+        function fetchData(url, lateResp) {
+    console.log(`Fetching data from: ${url}`);
+    
+    setTimeout(function() {
+            const response = `Response from ${url}`;
+            lateResp(response);
+        }, 3000); 
+    }
+
+    fetchData('https://flipkart.com', function(response) {
+        console.log(response); 
+    });
+
+    </script>
+</body>
+</html>

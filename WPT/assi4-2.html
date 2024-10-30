@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inspect and check the console</h1>
+    <script>
+        const arry=[11,22,33,44,55,66];
+        function forEachElement(arry,callbackfun){
+            for(let i=0;i<arry.length;i++){
+                callbackfun(arry[i],i);
+            }
+        }
+        
+        forEachElement(arry, function(element,index){
+        
+        console.log(`${index}=>${element*2}`);
+    });
+
+    </script>
+</body>
+</html>
