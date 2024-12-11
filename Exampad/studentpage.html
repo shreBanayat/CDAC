@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exampad</title>
+    <link rel="stylesheet" href="css/student-style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--  -->
+</head>
+<body>
+
+    <div class="header">
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Exampad</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a href="index.html"><img src="images/logout.png" alt="source not found" id="logout"></a>
+            </div>
+          </nav>
+    </div>
+
+    <div id="heading">
+        <h1>Welcome, user!</h1>    
+    </div>
+
+    <div class="nav2">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="show('exam')" aria-current="page" href="#" >Exam</a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="show('quiz')" href="#">Quiz</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="show('score')" href="#">Score</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link " aria-disabled="true">Disabled</a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <div class="data">
+
+        <div id="exam">
+            <div class="card">
+                <div class="card-header">
+                  OOPJ
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">OOPJ Module Exam</h5>
+                  <p class="card-text">Exam is scheduled on 8th october 2024</p>
+                  <a href="#" class="btn btn-primary">Start Test</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  ADS
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">ADS Module Exam</h5>
+                  <p class="card-text">Exam is scheduled on 7th october 2024</p>
+                  <a href="#" class="btn btn-primary">Start Test</a>
+                </div>
+              </div>
+        </div>
+
+        <div id="quiz">
+
+            <div class="card">
+                <div class="card-header">
+                  WPT
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">WPT Practice Quiz</h5>
+                  <p class="card-text">4-11-2024</p>
+                  <a href="#" class="btn btn-primary">Start Quiz</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  WPT
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">WPT Practice Quiz</h5>
+                  <p class="card-text">28-10-2024</p>
+                  <a href="#" class="btn btn-primary">Start Quiz </a>
+                </div>
+              </div>
+        </div>
+
+        <div id="score">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Exam</th>
+                    <th scope="col">Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>4-11-2024</td>
+                    <td>WPT Practice Quiz</td>
+                    <td>15/20</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>28-10-2024</td>
+                    <td>WPT Practice Quiz</td>
+                    <td>13/20</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>08-10-2024</td>
+                    <td>OOPJ Module Exam</td>
+                    <td>25/40</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>07-10-2024</td>
+                    <td>ADS Module Exam</td>
+                    <td>35/40</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <script>
+        function show(section){
+            document.getElementById('exam').style.display='none';
+            document.getElementById('quiz').style.display='none';
+            document.getElementById('score').style.display='none';
+
+            document.getElementById(section).style.display='block';
+        }
+
+        function schedule(timeDate){
+          if(timeDate > Date){
+
+          }
+        }
+    </script>
+     
+</body>
+</html>
